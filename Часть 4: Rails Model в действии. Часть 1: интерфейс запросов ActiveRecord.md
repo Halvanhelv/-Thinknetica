@@ -176,7 +176,8 @@ User.find_each(start: 2000, finish: 10000) do |user|
   NewsMailer.weekly(user).deliver_now
 end
 ```
-http://rusrails.ru/active-record-query-interface
+[Дополнительная информация][1]
+
 ```ruby
 Test.joins('JOIN categories ON tests.category_id = categories.id')
 
@@ -202,3 +203,6 @@ test.destroy удален в базе но не в памяти
 ```ruby
 test.reload
 ```
+
+[1]: http://rusrails.ru/active-record-query-interface
+
