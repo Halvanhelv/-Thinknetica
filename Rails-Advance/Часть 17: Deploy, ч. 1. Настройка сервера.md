@@ -111,7 +111,7 @@ id_dsa.pub
 такую команду пишем что бы не создавать вручную файл ```authorized_keys``` который хранит ```ssh``` ключи машин  у которых есть доступ к этому удаленному серверу
 
 ```bash
-cat ~/.ssh/id_rsa | ssh -p 2222 deployer@128.199.55.204 'cat >> /home/deployer/.ssh/authorized_keys' 
+cat ~/.ssh/id_rsa.pub | ssh -p 2222 deployer@128.199.55.204 'cat >> /home/deployer/.ssh/authorized_keys' 
 ```
 
 ```bash
